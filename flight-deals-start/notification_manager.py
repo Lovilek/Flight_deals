@@ -1,7 +1,7 @@
 from twilio.rest import Client
 
-ACCOUNT_ID = "AC4c067a311cb216e274a864024eab570e"
-TOKEN = "1ee3076cf97c142875a4b5f9b9c5c50b"
+ACCOUNT_ID = "TWILIO_ACC_ID"
+TOKEN = "YOUR_TOKEN"
 
 
 class NotificationManager:
@@ -13,6 +13,6 @@ class NotificationManager:
         for flight in self.all_cheap_flights:
             message = client.messages.create(
                 from_='+18642522521',
-                to='+77787329544',
+                to='YOUR_NUMBER',
                 body=f"\nLow price alert! Only {flight['price']}$ to fly \nfrom {flight['cityFrom']}-{flight['cityCodeFrom']} to {flight['cityTo']}-{flight['cityCodeTo']}\nfrom {flight['utc_departure']} to {flight['utc_arrival']}"
             )
