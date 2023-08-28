@@ -2,7 +2,7 @@ import requests
 
 FLY_FROM = "ALA"
 FLY_END_POINT = "https://api.tequila.kiwi.com/v2/search"
-API_KEY = "z-3vFKQ2bOwT02R_jOf_TmIItJBzhVqp"
+API_KEY = "YOUR_API"
 
 
 class FlightSearch:
